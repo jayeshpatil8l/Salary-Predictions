@@ -1,0 +1,58 @@
+body 
+{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+nav{
+    background-color: black;
+    margin: 0px;
+    height: 50px;
+    align-content: center
+    
+}
+
+.home
+{
+    padding: 0px 25vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    color: white ;
+}
+
+.container 
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: aliceblue;
+    text-align: left;
+    margin: 0px 25vw;
+    padding: 0px 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h4{
+    margin-bottom:10px;
+}
+
+ul{
+    list-style-type: disc; 
+    margin-bottom: 5px;
+}
+
+p{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+

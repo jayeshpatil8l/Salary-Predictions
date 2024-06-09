@@ -1,0 +1,59 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', path = '/index.css') }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Salary Estimator</title>
+  </head>
+  <body>
+    <nav>
+      <div class="home"><a href="/"> Home</a></div>
+    </nav>
+    <div class="container">
+      <form class="form" action="/predict" method="post">
+        <h1>Salary Estimator</h1>
+        <p>Enter Details Below to Estimate Salary!</p>
+
+        <div class="designation">
+          <label for="designation" name="designation"> Designation</label>
+          <select name="designation" id = "designation" required >
+            <option value="Analyst">Analyst</option>
+            <option value="Senior Analyst">Senior Analyst</option>
+            <option value="Associate">Associate</option>
+            <option value="Senior Manager">Senior Manager</option>
+            <option value="Manager">Manager</option>
+            <option value="Director">Director</option>
+          </select>
+        </div>
+
+        <label for="age" name="age" class="label"> Age </label>
+        <input type="number" name="age" id = "age" class="input" required />
+
+        <label for="exp" name="exp" class="label">
+          Past Experience<span class = "optional">(In Years)</span></label
+        >
+        <input type="number" name="exp" id = "exp" class="input" required />
+
+        <label for="ratings" name="ratings" class="label"> Ratings <span class = "optional">(Between 1 - 5)</span></label>
+        <input type="number" name="ratings" id = "ratings" class="input" required />
+
+        <div>
+          <label for="leaves" name="leaves" class="label"> Leaves Used </label
+          ><span class = "optional">(optional)</span>
+          <br />
+          <input type="number" name="leaves" id = "leaves" value="0" />
+        </div>
+
+        <button class="button" onclick = "submit_data()">Estimate</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+body 
+{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+nav{
+    background-color: black;
+    margin: 0px;
+    height: 50px;
+    align-content: center
+    
+}
+
+.home
+{
+    padding: 0px 25vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    color: white ;
+}
+
+.container 
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: aliceblue;
+    text-align: left;
+    margin: 0px 25vw;
+    padding: 0px 10px;
+    
+}
+
+.form
+{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0px 50px;
+}
+
+h1{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: 15px 0px;
+
+}
+
+p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+}
+
+select[name = "designation"]
+{
+    margin: 0px 10px;
+    height: 20px
+}
+
+.designation
+{
+    margin: 10px 0px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.label
+{
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.input 
+{
+    margin-bottom: 10px;
+    max-width: 100px;
+    height: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.optional{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+input[name = "leaves"]
+{
+    margin: 10px 0px;
+    max-width: 100px;
+    height: 18px;
+}
+
+.button
+{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    max-width: 80px;
+    margin: 5px 0px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.button:hover{
+    background-color: black;
+    color: white;
+}
