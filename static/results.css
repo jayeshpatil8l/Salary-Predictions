@@ -47,12 +47,12 @@ h4{
 }
 
 ul{
-    list-style-type: disc; 
     margin-bottom: 5px;
+    font-size: 14px;
 }
 
 p{
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 17px;
 }
 
